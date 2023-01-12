@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- Scripts -->
+    <script defer src="js/general.js"></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="https://kit.fontawesome.com/0c74900712.js" crossorigin="anonymous"></script>
+    <title>Valorant Wiki</title>
+</head>
+
+<body>
+    <header>
+        <h1>vAlorant Wiki</h1>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item active"><i class="fa-solid fa-users"></i> Agents</li>
+                <li class="menu-item"><i class="fa-solid fa-gun"></i> Guns</li>
+                <li class="menu-item"><i class="fa-regular fa-map"></i> Maps</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-principal">
+        </section>
+        <section class="control-panel">
+            <select id="filter-select" class="js-example-responsive">
+                <option selected value="disabled" disabled>Filter by</option>
+                <option value="Initiator" class="filter-option">Initiator</option>
+                <option value="Sentinel" class="filter-option">Sentinel</option>
+                <option value="Duelist" class="filter-option">Duelist</option>
+                <option value="Controller" class="filter-option">Controller</option>
+            </select>
+            <button class="page-btn">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Christian Mateus, 2023</p>
+    </footer>
+</body>
+
+</html>

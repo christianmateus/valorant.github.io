@@ -1,0 +1,142 @@
+@import url("general.css");
+
+/* ==============================
+    Container Geral
+   ============================== */
+
+main {
+    width: 100%;
+}
+
+.container-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 75vh;
+    padding: 3%;
+}
+
+.container-principal .card {
+    position: relative;
+    background-color: var(--gray-blue);
+    padding: 10px;
+    margin: 30px;
+    width: 220px;
+    height: 220px;
+    font-family: "valorant";
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    transition: all .2s;
+}
+
+.card .char-image {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    pointer-events: none;
+}
+
+.card .char-role {
+    position: absolute;
+    display: block;
+    bottom: 30px;
+    color: var(--white);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.card .char-name {
+    position: absolute;
+    bottom: 0;
+    font-size: 16pt;
+    color: var(--white);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* HOVER and ACTIVE */
+.container-principal .card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(150, 164, 190, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.container-principal .card:active {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+/* ==============================
+    Filter
+   ============================== */
+
+#filter-select {
+    width: 150px;
+    height: 40px;
+    padding: 0 5px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Source Sans 3";
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.filter-option {
+    border-radius: 10px;
+    background-color: var(--bright-red);
+    color: var(--white);
+    font-size: 11pt;
+}
+
+/* ==============================
+    Pagination buttons 
+   ============================== */
+
+.control-panel {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    padding-bottom: 2%;
+}
+
+.control-panel .page-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--bright-red);
+    color: var(--white);
+    border: 3px solid var(--white);
+    font-family: "Source Sans 3";
+    font-size: 12pt;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.control-panel .page-btn:hover {
+    background-color: var(--medium-red);
+}
+
+/* ==============================
+    Responsive 
+   ============================== */
+
+@media only screen and (max-width: 1024px) {
+    .container-principal {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container-principal .card {
+        width: 150px;
+        height: 150px;
+        margin: 30px;
+    }
+}
