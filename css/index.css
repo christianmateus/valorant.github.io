@@ -76,7 +76,8 @@ main {
     Filter
    ============================== */
 
-#filter-select {
+#filter-select,
+#filter-select-weapons {
     width: 150px;
     height: 40px;
     padding: 0 5px;
@@ -139,4 +140,9 @@ main {
         height: 150px;
         margin: 30px;
     }
+}
+
+/* ------------- */
+.hide {
+    display: none;
 }

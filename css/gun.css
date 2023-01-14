@@ -1,0 +1,249 @@
+@import url("general.css");
+
+/* ==============================
+    Container Geral
+   ============================== */
+
+main {
+    width: 100%;
+    padding: 4%;
+}
+
+.card {
+    background-color: var(--gray-blue);
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    font-family: "Source Sans 3";
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    transition: all .2s;
+}
+
+/* ==============================
+    Biography 
+   ============================== */
+
+.container-biography {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: lime; */
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 15px;
+}
+
+/* ==============================
+    Name container 
+   ============================== */
+
+.container-name {
+    text-align: center;
+    color: var(--white);
+    padding: 5px 15px;
+}
+
+.container-name .weapon-name {
+    font-size: 3rem;
+    font-family: "valorant";
+}
+
+.container-name .weapon-category {
+    color: var(--white);
+}
+
+/* ==============================
+    Containers 
+   ============================== */
+
+.container-weapon-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-damage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1;
+    width: fit-content;
+}
+
+.container-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    max-width: 640px;
+    padding: 10px;
+}
+
+/* ==============================
+    Table 
+   ============================== */
+
+table {
+    flex: 1;
+    width: 100%;
+    height: fit-content;
+    min-width: 293px;
+    border-collapse: collapse;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.22);
+}
+
+table .table-title {
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    color: var(--white);
+    background-color: var(--bright-red);
+}
+
+table .table-header {
+    text-align: left;
+    padding: 16px 10px;
+    font-size: 12pt;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.22);
+}
+
+table .table-cell {
+    padding: 14px 8px;
+    font-size: 10pt;
+    background-color: rgba(240, 240, 240, 1);
+    border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+/* ==============================
+    Weapon stats 
+   ============================== */
+
+.stat {
+    padding: 10px;
+    margin: 10px;
+    max-width: 245px;
+    min-width: 215px;
+    height: fit-content;
+    font-size: 1.1rem;
+    color: var(--white);
+    background-color: var(--medium-red);
+    border-radius: 5px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stat:hover {
+    background-color: #dc3944;
+}
+
+.stat .stat-title {
+    /* font-weight: 300; */
+}
+
+.stat .stat-progress {
+    appearance: none;
+    max-width: 140px;
+    margin-right: 10px;
+}
+
+.stat .stat-progress::-webkit-progress-bar {
+    background-color: var(--dark-red);
+    border-radius: 2px;
+}
+
+.stat .stat-progress::-webkit-progress-value {
+    background-color: var(--white);
+    border-radius: 2px;
+}
+
+/* ==============================
+    Skin Preview 
+   ============================== */
+
+.container-skins {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.container-skins h2 {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    background-color: var(--bright-red);
+    color: var(--white);
+}
+
+.skin-controls {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.skin-controls button {
+    font-size: 22pt;
+    background-color: var(--medium-red);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: .1s;
+}
+
+.skin-controls button:active {
+    transform: scale(0.9);
+}
+
+.skin-controls i {
+    padding: 20px;
+    color: var(--white);
+}
+
+.skin-title {
+    width: 100%;
+    color: var(--white);
+}
+
+/* ==============================
+    Responsive 
+   ============================== */
+
+@media only screen and (max-width: 800px) {
+
+    .container-name .weapon-name {
+        font-size: 1.2rem;
+        font-family: "valorant";
+    }
+
+    .card .weapon-thumbnail,
+    .skin-preview {
+        max-width: 200px;
+    }
+
+    .stat {
+        max-width: 165px;
+        min-width: 105px;
+    }
+
+    .skin-controls button {
+        margin: 10px 20px;
+    }
+
+    .skin-controls i {
+        padding: 10px;
+        color: var(--white);
+    }
+
+    /* TABLE */
+    table .table-cell {
+        padding: 4px 8px;
+    }
+
+    table .table-header {
+        padding: 6px 10px;
+    }
+
+}

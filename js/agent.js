@@ -11,7 +11,6 @@ const abilityDesc = document.getElementsByClassName("ability-description");
 // Menu buttons
 const menuBtn = document.getElementsByClassName("menu-item");
 
-
 /* ======================
     Functions
    ====================== */
@@ -47,5 +46,5 @@ getCardData()
 
 // Menu buttons
 menuBtn[0].onclick = () => { window.location.href = "../index.html" };
-menuBtn[1].onclick = () => { window.location.href = "../gun.html" };
-menuBtn[2].onclick = () => { window.location.href = "../map.html" };
+menuBtn[1].onclick = () => { window.location.href = "../index.html" };
+menuBtn[2].onclick = () => { window.location.href = "../index.html" };

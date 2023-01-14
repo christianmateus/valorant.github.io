@@ -1,15 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/gun.css">
+    <!-- Scripts -->
+    <script defer src="js/general.js"></script>
+    <script defer src="js/gun.js"></script>
+    <script src="https://kit.fontawesome.com/0c74900712.js" crossorigin="anonymous"></script>
     <title>Gun name</title>
 </head>
 
 <body>
-
+    <header>
+        <h1>vAlorant Wiki</h1>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><i class="fa-solid fa-users"></i> Agents</li>
+                <li class="menu-item"><i class="fa-solid fa-gun"></i> Guns</li>
+                <li class="menu-item"><i class="fa-regular fa-map"></i> Maps</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <div class="container-biography">
+                <div>
+                    <img src="" alt="" class="weapon-thumbnail">
+                </div>
+                <div class="container-name">
+                    <p class="weapon-name"></p>
+                    <p class="weapon-category"></p>
+                </div>
+            </div>
+            <section class="container-weapon-stats">
+                <div class="container-damage">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="4">DAMAGE</th>
+                            </tr>
+                            <tr>
+                                <th class="table-header"></th>
+                                <th class="table-header"></th>
+                                <th class="table-header"></th>
+                                <th class="table-header"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-cell">Head</td>
+                                <td class="table-cell table-cell-head"></td>
+                                <td class="table-cell table-cell-head"></td>
+                                <td class="table-cell table-cell-head"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell">Body</td>
+                                <td class="table-cell table-cell-body"></td>
+                                <td class="table-cell table-cell-body"></td>
+                                <td class="table-cell table-cell-body"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell">Legs</td>
+                                <td class="table-cell table-cell-legs"></td>
+                                <td class="table-cell table-cell-legs"></td>
+                                <td class="table-cell table-cell-legs"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container-stats">
+                    <div class="stat">
+                        <h5 class="stat-title">Fire Rate</h5>
+                        <progress max="16" class="stat-progress"></progress>
+                        <span class="stat-value">10.5</span>
+                    </div>
+                    <div class="stat">
+                        <h5 class="stat-title">Capacity</h5>
+                        <progress max="100" class="stat-progress"></progress>
+                        <span class="stat-value"></span>
+                    </div>
+                    <div class="stat">
+                        <h5 class="stat-title">Run Speed</h5>
+                        <progress max="5.8" class="stat-progress"></progress>
+                        <span class="stat-value"></span>
+                    </div>
+                    <div class="stat">
+                        <h5 class="stat-title">Equip Speed</h5>
+                        <progress max="1.5" class="stat-progress"></progress>
+                        <span class="stat-value"></span>
+                    </div>
+                    <div class="stat">
+                        <h5 class="stat-title">Reload Speed</h5>
+                        <progress max="5" class="stat-progress"></progress>
+                        <span class="stat-value"></span>
+                    </div>
+                </div>
+            </section>
+            <section class="container-skins">
+                <h2>SKINS</h2>
+                <div class="skin-controls">
+                    <button class="skin-btn"><i value="prev" class="fas fa-arrow-circle-left"></i></button>
+                    <img class="skin-preview" src="" alt="">
+                    <button class="skin-btn"><i value="next" class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="skin-title-container">
+                    <h3 class="skin-title">SKIN NAME</h3>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Christian Mateus, 2023</p>
+    </footer>
 </body>
 
 </html>

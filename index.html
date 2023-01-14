@@ -19,9 +19,9 @@
         <h1>vAlorant Wiki</h1>
         <nav>
             <ul class="menu">
-                <li class="menu-item active"><i class="fa-solid fa-users"></i> Agents</li>
-                <li class="menu-item"><i class="fa-solid fa-gun"></i> Guns</li>
-                <li class="menu-item"><i class="fa-regular fa-map"></i> Maps</li>
+                <li class="menu-item"><i style="pointer-events: none;" class="fa-solid fa-users"></i> Agents</li>
+                <li class="menu-item"><i style="pointer-events: none;" class="fa-solid fa-gun"></i> Guns</li>
+                <li class="menu-item"><i style="pointer-events: none;" class="fa-regular fa-map"></i> Maps</li>
             </ul>
         </nav>
     </header>
@@ -29,12 +29,21 @@
         <section class="container-principal">
         </section>
         <section class="control-panel">
-            <select id="filter-select" class="js-example-responsive">
+            <select id="filter-select" class="hide">
                 <option selected value="disabled" disabled>Filter by</option>
                 <option value="Initiator" class="filter-option">Initiator</option>
                 <option value="Sentinel" class="filter-option">Sentinel</option>
                 <option value="Duelist" class="filter-option">Duelist</option>
                 <option value="Controller" class="filter-option">Controller</option>
+            </select>
+            <select id="filter-select-weapons" class="hide">
+                <option selected value="disabled" disabled>Filter by</option>
+                <option value="Sidearm" class="filter-option">Sidearm</option>
+                <option value="Shotgun" class="filter-option">Shotgun</option>
+                <option value="SMG" class="filter-option">SMG</option>
+                <option value="Rifle" class="filter-option">Rifle</option>
+                <option value="Heavy" class="filter-option">Heavy</option>
+                <option value="Sniper" class="filter-option">Sniper</option>
             </select>
             <button class="page-btn">1</button>
             <button class="page-btn">2</button>
